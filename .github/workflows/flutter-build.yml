@@ -222,7 +222,7 @@ jobs:
       - name: Upload unsigned EXE
         uses: actions/upload-artifact@master
         with:
-          name: rust-${{ env.VERSION }}-${{ matrix.job.arch }}.exe
+          name: rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.exe
           path: ./SignOutput/rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.exe
 
 #      - name: Sign rustdesk self-extracted file
